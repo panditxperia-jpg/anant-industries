@@ -84,6 +84,7 @@ export const productDetails = [
     shortDescription:
         "Precision Engineered Cable Management for Industrial & Severe Duty Installations.",
     image: "cabletray.png",
+    d_image: "ct1.png",
     accent: "#01c4f4",
     accentAlt: "#07556a",
     eyebrow: "COOLER, QUIETER ROOFING",
@@ -107,10 +108,10 @@ export const productDetails = [
       },
     ],
     applications: [
-      "Factories and warehouses",
+      "Factories",
       "Commercial roofing",
       "Residential structures",
-      "Chemical and coastal environments",
+      "Warehouses",
     ],
     highlights: [
       { value: "UPVC", label: "Unplasticized construction" },

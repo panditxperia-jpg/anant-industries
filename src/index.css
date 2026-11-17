@@ -147,6 +147,7 @@
   flex-direction: column;
   line-height: 1;
   flex: 0 0 auto;
+  background-image: url("/assets/logo.png");
 }
 .logo strong {
   font-family: "Inter:Bold";
