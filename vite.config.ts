@@ -7,14 +7,14 @@ import siteConfiguration from "./.figma/make/site.json";
 
 const productSlugs = [
   "metal-decking-sheet",
-  "upvc-roofing-sheets",
+  /*"upvc-roofing-sheets",*/
   "c-z-purlins",
   "linear-profile-sheets",
   "color-coated-coils",
   "roofing-sheet-accessories",
   "galvanized-corrugated-sheets",
   "color-profile-sheets",
-  "container-sheets",
+  /*"container-sheets",*/
   "turbo-fans",
   "cable-tray",
 ];
