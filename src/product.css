@@ -407,7 +407,7 @@
   border: 0;
   border-radius: 4px;
   background: transparent;
-  color: rgb(0 0 0 / 52%);
+  color: var(--prod-btn-txt);
   text-align: left;
   cursor: pointer;
   transition:
@@ -416,7 +416,7 @@
 }
 
 .pd-feature-tabs button:hover {
-  color: #000;
+  color: var(--prod-btn-txt);
 }
 
 .pd-feature-tabs button.active {
@@ -1126,7 +1126,7 @@
   padding-top: 5%;
   font-size: clamp(34px, 4vw, 52px);
   letter-spacing: -1.8px;
-  color: #0c292b;
+  color: var(--prod-btn-txt);
 }
 
 .pd-organizations > div {

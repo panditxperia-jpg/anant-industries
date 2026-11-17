@@ -63,6 +63,7 @@
   --button-bg: #fff;
   --button-text: #111115;
   --shadow: none;
+  --prod-btn-txt: rgb(255 255 255 / 52%);;
 }
 
 :root[data-theme="light"] {
@@ -79,6 +80,7 @@
   --button-bg: #171717;
   --button-text: #fff;
   --shadow: 0 12px 36px rgb(29 28 25 / 8%);
+  --prod-btn-txt: rgb(0 0 0 / 52%);
 }
 
 @layer base {
