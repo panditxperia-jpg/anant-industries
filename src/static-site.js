@@ -155,7 +155,7 @@ function productPage(product) {
 
     return `<div class="pd-page">
     ${mainHeader(product)}
-    <div class="pd-subnav"><a href="/">Anant Industries</a><span>${product.name}</span><nav><a href="#overview">Overview</a><a href="#features">Features</a>F</nav><a href="#quote">Request pricing</a></div>
+    <div class="pd-subnav"><a href="/">Anant Industries</a><span>${product.name}</span><nav><a href="#overview">Overview</a><a href="#features">Features</a></nav><a href="#quote">Request pricing</a></div>
     <main>
       <section class="pd-brand-hero"><div class="pd-wrap pd-brand-layout"><div class="pd-brand-copy"><div class="pd-proof"><div><span>15+</span><span>500+</span><span>400+</span></div><p>Trusted across more than 500 completed projects</p></div><h1>The strength of<br>${product.name}<br>wherever you build.</h1><div class="pd-context-switcher"></div></div><div class="pd-brand-art"><section class="pd-intro pd-wrap"><p class="pd-label">${product.eyebrow}</p><p class="pd-intro-line">${product.shortDescription}</p><div class="pd-intro-actions"><a class="pd-button pd-button-solid" href="#quote">Request a quote</a><span>Made in Hyderabad · Supplied across India</span></div></section></div></div>
       </section>
