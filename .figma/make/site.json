@@ -1,1 +1,20 @@
-{}
+{
+  "title": "Anant Industries",
+  "analytics": {
+    "googleAnalyticsId": "GTM-W9PKKBNF"
+  },
+  "robots": {
+    "index": true
+  },
+  "description": "Get in touch with Anant Industries for Deck sheets, Colour Profiles, G.C. Sheets, C & Z Purlins, Turbo Fans, Cable Tray & Colour Coated Coils",
+  "accessibility": {
+    "addBypassLinks": true
+  },
+  "icons": {
+    "icon": "/favicon.png"
+  },
+  "customScripts": {
+    "headStart": "<meta name=\"robots\" content=\"all\">",
+    "headEnd": "<meta name=\"keywords\" content=\"Deck Sheets manufacturers in Hyderabad, Deck Sheets suppliers in Hyderabad, Deck Sheets dealers in Hyderabad, Colour Profile sheets manufacturers in Hyderabad, Colour Profile sheets suppliers in Hyderabad, Colour Profile sheets dealers in Hyderabad, GC Sheets manufacturers in Hyderabad, GC Sheets suppliers in Hyderabad, GC Sheets dealers in Hyderabad, C  Purlins manufacturers in Hyderabad, C  Purlins suppliers in Hyderabad, C  Purlins dealers in Hyderabad, Z  Purlins manufacturers in Hyderabad, Z  Purlins suppliers in Hyderabad, Z  Purlins dealers in Hyderabad,  Turbo Fans manufacturers in Hyderabad, Turbo Fans suppliers in Hyderabad, Turbo Fans dealers in Hyderabad, Colour Coated Coils manufacturers in Hyderabad, Colour Coated Coils suppliers in Hyderabad, Colour Coated Coils dealers in Hyderabad\">"
+  }
+}

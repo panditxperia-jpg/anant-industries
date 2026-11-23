@@ -59,7 +59,6 @@ export default defineConfig(({ mode }) => {
       watch: {
         ignored: ["**/.figma/**"],
       },
-      allowedHosts: ["hulvch7kye.preview.c35.airoapp.ai"],
     },
     preview: {
       host: process.env.FIGMA_DEV_SERVER_HOST || "0.0.0.0",
@@ -68,7 +67,7 @@ export default defineConfig(({ mode }) => {
   };
 });
 
-type FigmaSiteConfiguration = {
+type AnantIndustriesConfiguration = {
   title?: string;
   description?: string;
   language?: string;
@@ -96,18 +95,20 @@ type FigmaSiteConfiguration = {
 };
 
 /** Applies /.figma/make/site.json to the generated document shell. */
-function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
+function figmaSiteConfiguration(config: AnantIndustriesConfiguration): Plugin {
   function sanitizeHtmlValue(value: string | undefined): string {
     return value?.replace(/[^a-zA-Z0-9_-]/g, "") || "";
   }
+
   function escapeHtmlText(value: string): string {
     return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
+
   function replaceHtmlCommentSlot(html: string, slotName: string, content: string): string {
     return html.replace(`<!-- ${slotName} -->`, content);
   }
 
-  const title = config.title ?? "Figma Make App";
+  const title = config.title ?? "Anant Industries";
   const description = config.description ?? "";
   // Imported HTML keeps its own favicon. New Makes use PNG because Google Search does not
   // support SVG favicons, even though browsers do.
@@ -331,23 +332,23 @@ function figmaMakeKitPlugin(options: { storiesGlob: string | string[] }): Plugin
   const RESOLVED_ID = "\0" + VIRTUAL_ID;
   const STORIES_MODULE = `export const stories = import.meta.glob(${JSON.stringify(storiesGlob)})`;
   const HTML_BOOTSTRAP = `<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body>
-<div id="figma-make-kit-root"></div>
-<script type="module">
-  import { stories } from 'virtual:figma-stories'
-  window.__FIGMA__ = Object.assign(window.__FIGMA__ ?? {}, { stories })
-  window.dispatchEvent(new CustomEvent('figma.ready'))
-</script>
-</body>
-</html>`;
+                            <html lang="en">
+                            <head>
+                            <meta charset="UTF-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                            </head>
+                            <body>
+                            <div id="anant-industries-root"></div>
+                            <script type="module">
+                              import { stories } from 'virtual:figma-stories'
+                              window.__FIGMA__ = Object.assign(window.__FIGMA__ ?? {}, { stories })
+                              window.dispatchEvent(new CustomEvent('figma.ready'))
+                            </script>
+                            </body>
+                            </html>`;
 
   return {
-    name: "figma-make-kit",
+    name: "anant-industries",
     apply: "serve",
     resolveId(id) {
       if (id === VIRTUAL_ID) return RESOLVED_ID;
@@ -399,6 +400,7 @@ function figmaLinkedPackageSourcemaps(): Plugin {
     const linked = linkedPackages.find(({ realDir }) => file.startsWith(realDir + path.sep));
     return linked && path.join(linked.installedDir, path.relative(linked.realDir, file));
   }
+
   function readSourceMap(file: string, code: string) {
     const url = sourceMappingUrl.exec(code)?.[1];
     try {

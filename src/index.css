@@ -63,7 +63,7 @@
   --button-bg: #fff;
   --button-text: #111115;
   --shadow: none;
-  --prod-btn-txt: rgb(255 255 255 / 52%);;
+  --prod-btn-txt: rgb(255 255 255 / 52%);
 }
 
 :root[data-theme="light"] {

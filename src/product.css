@@ -298,8 +298,7 @@
   overflow: hidden;
   display: grid;
   place-items: center;
-  background:
-    radial-gradient(circle at 20% 20%, var(--pd-accent), transparent 99%);
+  background: radial-gradient(circle at 20% 20%, var(--pd-accent), transparent 99%);
 }
 
 .pd-media-glow {

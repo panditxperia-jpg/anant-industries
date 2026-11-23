@@ -82,37 +82,32 @@ export const productDetails = [
     slug: "cable-tray",
     name: "Cable Tray",
     shortDescription:
-        "Precision Engineered Cable Management for Industrial & Severe Duty Installations.",
+      "Precision Engineered Cable Management for Industrial & Severe Duty Installations.",
     image: "cabletray.png",
     d_image: "ct1.png",
     accent: "#01c4f4",
     accentAlt: "#07556a",
     eyebrow: "COOLER, QUIETER ROOFING",
     intro:
-        "Lightweight UPVC sheets combine exceptional weather, chemical, and corrosion resistance with useful thermal insulation for more comfortable interiors.",
+      "Lightweight UPVC sheets combine exceptional weather, chemical, and corrosion resistance with useful thermal insulation for more comfortable interiors.",
     benefits: [
       {
         title: "Corrosion resistant",
         description:
-            "An ideal alternative to metal where chemicals, moisture, or harsh weather can affect roof life.",
+          "An ideal alternative to metal where chemicals, moisture, or harsh weather can affect roof life.",
       },
       {
         title: "Better insulation",
         description:
-            "Superior insulation properties help reduce heat transfer and support comfortable indoor spaces.",
+          "Superior insulation properties help reduce heat transfer and support comfortable indoor spaces.",
       },
       {
         title: "Minimal upkeep",
         description:
-            "The sheets maintain their appearance and performance for years with limited maintenance.",
+          "The sheets maintain their appearance and performance for years with limited maintenance.",
       },
     ],
-    applications: [
-      "Factories",
-      "Commercial roofing",
-      "Residential structures",
-      "Warehouses",
-    ],
+    applications: ["Factories", "Commercial roofing", "Residential structures", "Warehouses"],
     highlights: [
       { value: "UPVC", label: "Unplasticized construction" },
       { value: "Cool", label: "Thermal performance" },

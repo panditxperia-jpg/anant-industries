@@ -1,11 +1,11 @@
 {
-  "name": "figma-make-app",
+  "name": "anant-industries",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite -m=production",
+    "build": "vite build -m=production",
     "preview": "vite preview",
     "format": "oxfmt"
   },
