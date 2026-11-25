@@ -2,8 +2,13 @@ import { getProduct, productDetails } from "./data/products.js";
 import "./index.css";
 import "./product.css";
 
-const images = import.meta.glob('/src/assets/*', { eager: true, import: 'default' });
+const images = import.meta.glob('/src/assets/**/*', {
+  eager: true,
+  import: 'default',
+});
+
 const asset = (name) => images[`/src/assets/${name}`];
+
 const productUrl = (slug) => `/products/${slug}/`;
 
 function logo() {
