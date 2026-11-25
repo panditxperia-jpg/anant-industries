@@ -2,7 +2,7 @@ import { getProduct, productDetails } from "./data/products.js";
 import "./index.css";
 import "./product.css";
 
-const asset = (name) => `/assets/${name}`;
+const asset = (name) => new URL(`./assets/${name}`, import.meta.url).href;
 const productUrl = (slug) => `/products/${slug}/`;
 
 function logo() {
