@@ -59,6 +59,7 @@ export default defineConfig(({ mode }) => {
       watch: {
         ignored: ["**/.figma/**"],
       },
+      allowedHosts: ['ief6evxzta.preview.c35.airoapp.ai']
     },
     preview: {
       host: process.env.FIGMA_DEV_SERVER_HOST || "0.0.0.0",
